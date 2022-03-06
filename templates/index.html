@@ -2,20 +2,67 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Say Hello</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <title>Chi Ta Duc</title>
+    <link rel="stylesheet" href="home.css">
+    <style type="text/css">
+        ul.horizontal_menu li, a, nav-brand {
+            display: inline;
+            list-style-type: none;
+            border: 1px solid #000;
+            margin: 5px;
+            padding: 2px;
+        }
+    </style>  
 </head>
-<body>
-    <img src="https://raw.githubusercontent.com/MariyaSha/SimpleGreetingApp/main/logo.png">
-    <br>
-    <form action="greet" method="post">
-        {% for message in get_flashed_messages() %}
-             <p>{{ message }}</p>
-         {% endfor %}
-        <br>
-        <input type="text" name="name_input">
-        <br>
-        <input type="submit" value="GREET" id="greet">
-    </form>
+<body>  
+    <!-- Navigation Bar -->
+<!-- ----------------------------  Navigation ---------------------------------------------- -->
+    
+    <nav class="nav">
+        <div class="nav-menu flex-row">
+            <div class="nav-brand">
+                <h1 style="background-color:rgb(72, 71, 87); font-size:1.5cm ; font-weight: lighter; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ; color: rgb(221, 137, 11)";>Chi Ta Duc</h1>
+            </div>
+            <div class="toggle-collapse">
+                <div class="toggle-icons">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+            <div>
+                <ul class="horizontal_menu">
+                    <li class="nav-link">
+                        <a href="#">Home</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">Category</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">Archive</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">Pages</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">Contact Us</a>
+                    </li>
+                </ul>
+                     
+                <!-- <ul class="horizontal_menu">
+                    <li>Home</li>   
+                    <li>About us</li>   
+                    <li>History</li>   
+                    <li>Contacts</li>   
+                </ul> -->
+            </div>
+            <div class="social text-gray">
+                <a href=""><i class="fab fa-facebook-f">F</i></a>
+                <a href="#"><i class="fab fa-instagram">I</i></a>
+                <a href="#"><i class="fab fa-twitter">T</i></a>
+                <a href="#"><i class="fab fa-youtube">Y</i></a>
+            </div>
+        </div>
+            <img src="../static/image/Background-image.png" style="height: inherit; width: auto;">
+    </nav>
+    <!-- Navigation Bar -->
 </body>
-</html>
+</html

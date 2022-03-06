@@ -1,6 +1,6 @@
 body {
     text-align: center;
-    background-color: SlateGrey;
+    background-color: red;
 }
 p {
     color: white;
@@ -26,16 +26,20 @@ input {
 
 input:focus {
     outline: none;
-    border: solid 5px #00FFCE;
+    border: solid 5px #010a08;
 }
 
 #greet {
-    background-color: PaleVioletRed;
+    background-color: green ;
     border:  none;
     width:  200px;
     color: white;
 }
 
 #greet:hover {
-    background-color: MediumVioletRed;
+    background-color: red;
+}
+h1 {
+    color: red;
+    font: Arial; 
 }
